@@ -29,11 +29,11 @@ public class DisplayColorCalibration {
     public static int getMaxValue()  {
         return 255;
     }
-    public static int getDefValue()  {
-        return getMaxValue();
-    }
     public static int getMinValue()  {
         return 0;
+    }
+    public static int getDefValue() {
+        return getMaxValue();
     }
     public static String getCurColors()  {
         return FileUtils.readOneLine(COLOR_FILE);
@@ -45,3 +45,4 @@ public class DisplayColorCalibration {
         return FileUtils.writeLine(COLOR_FILE_CTRL, "1");
     }
 }
+
